@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class arraylist {
-    public static void printSort(ArrayList<Integer> a1, ArrayList<Integer> a2) {
+    public static ArrayList<Integer> printSort(ArrayList<Integer> a1, ArrayList<Integer> a2) {
         ArrayList<Integer> list = new ArrayList<>();
         int p1 = 0, p2 = 0;
         while (p1 < a1.size() && p2 < a2.size()) {
@@ -20,9 +20,10 @@ public class arraylist {
             list.add(a2.get(p2));
             p2++;
         }
-        for (int val : list) {
-            System.out.print(val + " ");
-        }
+//        for (int val : list) {
+//            System.out.print(val + " ");
+//        }
+        return list;
 
     }
     public static void main(String[] args){
@@ -49,6 +50,8 @@ public class arraylist {
                  a2.add(idx);
              }
          }
-        printSort(a1, a2);
+       ArrayList<Integer> list =  printSort(a1, a2);
+         for(int val : list)
+             System.out.print(val+" ");
     }
 }
