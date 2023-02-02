@@ -15,9 +15,11 @@ public class arrDeque {
          dq.offerLast(101);
          dq.pollFirst();
          dq.pollLast();
+         System.out.println(dq.peek());
          System.out.println(dq.size());
 
          dq.forEach((x)->System.out.print(x+" "));
+
      }
 }
 
