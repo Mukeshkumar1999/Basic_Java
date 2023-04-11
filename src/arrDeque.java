@@ -12,9 +12,9 @@ public class arrDeque {
          dq.poll();
          dq.remove();
          dq.offerFirst(100);
-         dq.offerLast(101);
-         dq.pollFirst();
-         dq.pollLast();
+//         dq.offerLast(101);
+//         dq.pollFirst();
+//         dq.pollLast();
          System.out.println(dq.peek());
          System.out.println(dq.size());
 
