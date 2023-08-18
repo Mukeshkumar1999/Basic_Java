@@ -13,7 +13,7 @@ public class priorityQueu {
         pq.offer(3);
         pq.offer(30);
 //        pq.poll();
-        pq.remove();
+//        pq.remove();
         pq.forEach((e)-> System.out.print(e+" "));
     }
 }
