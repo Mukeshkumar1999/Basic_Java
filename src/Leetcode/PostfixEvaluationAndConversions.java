@@ -27,7 +27,7 @@ public class PostfixEvaluationAndConversions {
                 int v2 = value.pop();
                 int v1 = value.pop();
                 value.push(oprerations(v2, v1, ch));
-                // infix...
+//                 infix...
                 String infixVal2 = infix.pop();
                 String infixVal1 = infix.pop();
                 infix.push("(" + infixVal1 + ch + infixVal2 + ")");
