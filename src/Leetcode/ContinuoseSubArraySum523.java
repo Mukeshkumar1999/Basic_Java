@@ -3,6 +3,7 @@ import java.util.*;
 public class ContinuoseSubArraySum523 {
     public static boolean continuose(int[]arr , int k ){
         int MinLen = arr.length;
+        if(arr.length < 2)return false;
         for(int idx = 0; idx < arr.length-1; idx++){
             int sum = arr[idx];
             for(int jdx = idx+1; jdx < arr.length; jdx++){
